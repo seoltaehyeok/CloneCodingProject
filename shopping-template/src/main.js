@@ -34,16 +34,17 @@ function onButtonClick(event, items) {
 
 function setEventListeners(items) {
   const logo = document.querySelector('.logo');
-  const buttons = documnet.querySelector('.buttons');
+  const buttons = document.querySelector('.buttons');
   logo.addEventListener('click', () => displayItems(items));
-  buttons.addEventListener('click', event => onButtonClick(event, items))
+  buttons.addEventListener('click', event => onButtonClick(event, items));
 }
+
+
 
 //main
 loadItems() //제이슨이 실행되면 실행
   .then(items => {
-    console.log(items);
     displayItems(items); //아이템들을 보여주고 받아온 아이템을 함수에 전달
-    //setEventListeners(items) //버튼을 누르면 필터링을 하는 이벤트
+    setEventListeners(items) //버튼을 누르면 필터링을 하는 이벤트
   })
   .catch(console.log);
