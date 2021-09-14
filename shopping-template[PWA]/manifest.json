@@ -1,0 +1,23 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Online Shopping",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Online Shopping",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "images/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
